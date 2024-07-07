@@ -30,6 +30,70 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <header class="header">
+      <div class="container">
+        <a href="#" class="logo"
+          ><img
+            src="assets/logo.png"
+            alt="WeatherQuaere logo"
+            width="364"
+            height="58"
+        /></a>
+        <div class="search-view" data-search-view>
+          <div class="search-wrapper">
+            <input
+              type="search"
+              name="search"
+              class="search-field"
+              placeholder="search city name"
+              autocomplete="off"
+              data-search-field
+            />
+            <span class="n-icon leading-icon">search</span>
+
+            <button
+              class="icon-btn leading-icon has-state"
+              aria-label="close search"
+              data-search-toggler
+            >
+              <span class="n-icon">arrow_back</span>
+            </button>
+          </div>
+
+          <div class="search-result" data-search-result>
+            <ul class="view-list" data-search-list>
+              <li class="view-item">
+                <span class="n-icon">location_on</span>
+                <div>
+                  <p class="item-title">London</p>
+                  <p class="lebel-2 item-subtitle">State of London, GB</p>
+                </div>
+                <a href="#" class="item-link has-state" data-search-toggler></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="header-actions">
+          <button
+            class="icon-btn has-state"
+            aria-label="open search"
+            data-search-toggler
+          >
+            <span class="n-icon icon">search</span>
+          </button>
+          <a
+            href="#/current-location"
+            class="btn-primary has-state"
+            data-current-location-btn
+          >
+            <span class="n-icon">my_location</span>
+            <span class="span">Current Location</span>
+          </a>
+        </div>
+      </div>
+    </header>
+
     <script src="script.js"></script>
   </body>
 </html>
